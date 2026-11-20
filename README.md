@@ -7,7 +7,10 @@ CPU ve RAM kullanımını, CPU/GPU sıcaklıklarını ve çalışan işlemleri t
 Bu depo **1.3** sürümünün kaynak kodunu ve kullanıma hazır Windows paketini içerir.
 
 **[ThermalPilot 1.3 — Windows x64 ZIP indir](downloads/ThermalPilot-1.3-Windows-x64.zip?raw=true)**
-
+https://kommodo.ai/i/vV4gnxFxs2Myx9T5V9iR
+https://kommodo.ai/i/DjxeQfFtSt0bYdYyJR5J
+https://kommodo.ai/i/rlK9lpw9bbF6vSIuyVx0
+https://kommodo.ai/i/Dt0IuTRkblNAXyOENXlX
 [Kurulum](#kurulum) · [Özellikler](#özellikler) · [Kaynaktan derleme](#kaynaktan-derleme) · [Teknik belgeler](#teknik-belgeler)
 
 ## Kurulum
