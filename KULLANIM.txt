@@ -1,0 +1,28 @@
+THERMALPILOT 1.3 — Isı ve Performans
+
+ZIP'i bir klasöre çıkarın ve ThermalPilot.exe dosyasını açın.
+Uygulama yönetici erişimini zorunlu tutar. Windows UAC onayı isterse izin verin;
+onay verilmezse uygulama açılmaz. Sağ tıkla yönetici olarak açmanız gerekmez.
+Windows x64 ve .NET Framework 4.7.2 veya üzeri gerekir.
+Bu paketin CPU sensör yardımcısı ayrıca .NET 10 Windows Desktop Runtime x64 gerektirir.
+Uygulama runtime veya sensör paketini otomatik indirmez.
+
+GPU sıcaklığı, desteklenen ekran sürücülerinde Windows WDDM üzerinden okunur.
+NVIDIA için kurulu sürücünün nvidia-smi aracı da kullanılabilir.
+CPU için sensör kütüphanesi EXE'ye gömülüdür; desteklenen donanım ve PawnIO sürücüsü gerekir.
+Sensörler ve REA sekmesindeki açıklamaları okuyarak sürücü kurulumunu
+başlatabilirsiniz. Sürücü kurulumu ayrıca kullanıcı onayı ister.
+Desteklenmeyen, eksik, sıfır veya eski sıcaklık değerleri ölçüm olarak gösterilmez.
+
+Performans modları sekmesinden Sessiz / Serin, Dengeli veya Performans seçilebilir.
+Onaydan sonra geçici bir Windows güç planı uygulanır.
+Önceki ayarları geri al düğmesiyle geri dönülebilir; çıkışta geri alma varsayılan açıktır.
+Performans modu ısıyı, fan sesini ve pil tüketimini artırabilir.
+Gerçek hız, sıcaklık veya FPS artışı garantisi verilmez.
+
+Tanı kayıtları: %LOCALAPPDATA%\ThermalPilot\sensor-latest.json
+Olay kaydı: %LOCALAPPDATA%\ThermalPilot\sensor-events.jsonl
+Raporlar yerel kalır.
+
+Derleme, test, sensör desteği ve lisans ayrıntıları aynı klasördeki README.md
+ve THIRD-PARTY-NOTICES.md dosyalarında bulunur.
