@@ -1,271 +1,308 @@
 
 # ThermalPilot
 
-**ThermalPilot 1.3 — Windows Hardware Monitoring & Performance Control**
+**ThermalPilot 1.3 — Windows Donanım İzleme ve Performans Yönetimi**
 
-ThermalPilot is a lightweight Windows desktop application designed to monitor CPU and RAM usage, CPU/GPU temperatures, running processes, and system performance in real time.
+ThermalPilot; işlemci (CPU), ekran kartı (GPU), RAM kullanımı, donanım sıcaklıkları ve çalışan işlemleri gerçek zamanlı izlemek için geliştirilmiş hafif bir Windows masaüstü uygulamasıdır.
 
-Built with **C#, WPF, and AI-assisted development**, ThermalPilot combines hardware monitoring, sensor diagnostics, reversible performance optimization, and local system inspection in a single interface.
+**C#, WPF ve yapay zekâ destekli yazılım geliştirme teknolojileri** kullanılarak oluşturulan ThermalPilot; donanım izleme, sensör tanılama, geri alınabilir performans optimizasyonu ve sistem analizini tek bir arayüzde birleştirir.
 
-**Key Highlights**
-- Real-time CPU, GPU, and RAM monitoring
-- Hardware temperature tracking and sensor diagnostics
-- Windows performance and power management
-- Running process monitoring and prioritization
-- Local operation without cloud services or paid APIs
-- AI-assisted development and REA-based PE/COFF inspection
+### Öne Çıkan Özellikler
 
-### [Download ThermalPilot 1.3 — Windows x64](downloads/ThermalPilot-1.3-Windows-x64.zip?raw=true)
+- Gerçek zamanlı CPU, GPU ve RAM takibi
+- İşlemci ve ekran kartı sıcaklıklarının izlenmesi
+- Donanım sensörlerinin otomatik algılanması
+- Windows güç ve performans yönetimi
+- Çalışan işlemlerin ve kaynak tüketiminin görüntülenmesi
+- Sessiz / Serin, Dengeli ve Performans modları
+- Önceki sistem ayarlarını geri yükleme
+- Bulut servisi veya ücretli API gerektirmeyen yerel çalışma
+- AI Agent'lar ve REA destekli geliştirme yaklaşımı
 
-[Installation](#installation) · [Features](#features) · [Performance Modes](#performance-modes) · [Build from Source](#build-from-source) · [Technical Documentation](#technical-documentation)
+### [ThermalPilot 1.3 — Windows x64 İndir](downloads/ThermalPilot-1.3-Windows-x64.zip?raw=true)
 
----
-
-## Screenshots
-
-### System Overview
-
-Monitor hardware performance, CPU and GPU temperatures, resource utilization, and system activity through a desktop dashboard.
-
-![ThermalPilot System Overview](https://plain-eeur-prod-public.komododecks.com/202611/20/Dt0IuTRkblNAXyOENXlX/image.png)
-
-### Process Monitoring
-
-Identify resource-intensive applications and monitor running processes, CPU utilization, and memory consumption.
-
-![ThermalPilot Process Monitoring](https://plain-eeur-prod-public.komododecks.com/202611/20/vV4gnxFxs2Myx9T5V9iR/image.png)
-
-### Performance Optimization
-
-Switch between Quiet / Cool, Balanced, and Performance modes while maintaining the ability to restore previous Windows power settings.
-
-![ThermalPilot Performance Optimization](https://plain-eeur-prod-public.komododecks.com/202611/20/DjxeQfFtSt0bYdYyJR5J/image.png)
-
-### Hardware Sensors & Diagnostics
-
-Inspect CPU and GPU sensor information, temperature readings, hardware compatibility, and diagnostic reports.
-
-![ThermalPilot Hardware Sensors](https://plain-eeur-prod-public.komododecks.com/202611/20/rlK9lpw9bbF6vSIuyVx0/image.png)
-
-> Screenshots are currently hosted by Kommodo. For permanent availability, they can be stored directly in the repository.
+[Kurulum](#kurulum) · [Özellikler](#özellikler) · [Performans Modları](#performans-modları) · [Kaynaktan Derleme](#kaynaktan-derleme) · [Teknik Belgeler](#teknik-belgeler)
 
 ---
 
-## Installation
+## Uygulama Görselleri
 
-1. Download the [ThermalPilot 1.3 Windows x64 ZIP](downloads/ThermalPilot-1.3-Windows-x64.zip?raw=true).
-2. Extract the archive into a folder.
-3. Launch `ThermalPilot.exe`.
-4. Approve the Windows administrator permission prompt.
+### Genel Sistem Görünümü
 
-**Important:** GitHub's **Code → Download ZIP** downloads the source code. Use the application download link above to obtain the prebuilt Windows package.
+CPU ve GPU sıcaklıklarını, donanım performansını, sistem kaynaklarının kullanımını ve genel sistem durumunu tek bir panel üzerinden takip edin.
 
-### System Requirements
+![ThermalPilot Genel Sistem Görünümü](https://plain-eeur-prod-public.komododecks.com/202611/20/Dt0IuTRkblNAXyOENXlX/image.png)
 
-| Requirement | Details |
+### İşlem ve Kaynak İzleme
+
+Bilgisayarınızda çalışan uygulamaların işlemci ve bellek tüketimini görüntüleyin. Sistem kaynaklarını yoğun kullanan işlemleri kolayca belirleyin.
+
+![ThermalPilot İşlem İzleme](https://plain-eeur-prod-public.komododecks.com/202611/20/vV4gnxFxs2Myx9T5V9iR/image.png)
+
+### Performans Optimizasyonu
+
+Sessiz / Serin, Dengeli ve Performans modları arasında geçiş yaparak Windows güç ayarlarını yönetin.
+
+Yapılan değişiklikler gerektiğinde önceki durumuna geri alınabilir.
+
+![ThermalPilot Performans Optimizasyonu](https://plain-eeur-prod-public.komododecks.com/202611/20/DjxeQfFtSt0bYdYyJR5J/image.png)
+
+### Donanım Sensörleri ve Tanılama
+
+İşlemci ve ekran kartı sensörlerini, sıcaklık ölçümlerini, donanım uyumluluğunu ve tanılama bilgilerini inceleyin.
+
+![ThermalPilot Donanım Sensörleri](https://plain-eeur-prod-public.komododecks.com/202611/20/rlK9lpw9bbF6vSIuyVx0/image.png)
+
+> Görseller Kommodo üzerinden barındırılmaktadır. Kalıcı erişim için görsellerin doğrudan GitHub deposunda saklanması önerilir.
+
+---
+
+## Kurulum
+
+ThermalPilot, Windows x64 sistemler için hazırlanmıştır.
+
+### Nasıl Kurulur?
+
+1. [ThermalPilot 1.3 Windows x64 ZIP](downloads/ThermalPilot-1.3-Windows-x64.zip?raw=true) dosyasını indirin.
+2. İndirilen ZIP arşivini bir klasöre çıkarın.
+3. `ThermalPilot.exe` dosyasını çalıştırın.
+4. Windows yönetici izni istediğinde onaylayın.
+
+**Önemli:** GitHub üzerindeki **Code → Download ZIP** seçeneği uygulamanın kaynak kodlarını indirir. Çalıştırılabilir Windows sürümü için yukarıdaki indirme bağlantısını kullanın.
+
+### Sistem Gereksinimleri
+
+| Gereksinim | Açıklama |
 |---|---|
-| Operating System | Windows x64 |
-| Main Application | .NET Framework 4.7.2 or later |
-| Sensor Helper | .NET 10 Windows Desktop Runtime x64 |
-| Permissions | Administrator access |
-| CPU Temperature | Supported hardware and PawnIO driver |
-| GPU Monitoring | Compatible GPU and drivers |
+| İşletim Sistemi | Windows x64 |
+| Ana Uygulama | .NET Framework 4.7.2 veya üzeri |
+| Sensör Yardımcısı | .NET 10 Windows Desktop Runtime x64 |
+| Yetki | Yönetici erişimi |
+| CPU Sıcaklık Takibi | Desteklenen donanım ve PawnIO sürücüsü |
+| GPU Sıcaklık Takibi | Uyumlu ekran kartı ve sürücüler |
 
-ThermalPilot does not automatically install runtime components.
+ThermalPilot gerekli çalışma zamanı bileşenlerini otomatik yüklemez.
 
-On compatible systems, GPU temperature information can be retrieved through Windows WDDM. NVIDIA hardware may also use the existing `nvidia-smi` utility.
+Uyumlu sistemlerde GPU sıcaklıkları Windows WDDM üzerinden okunabilir. NVIDIA ekran kartlarında mevcut `nvidia-smi` aracı da kullanılabilir.
 
-The sensor package is embedded in the executable and does not require a separate LibreHardwareMonitor interface.
+Sensör bileşenleri uygulamaya gömülüdür. Ayrı bir LibreHardwareMonitor arayüzü açılması gerekmez.
 
-Optional driver installation requires explicit user approval.
+İsteğe bağlı sürücü kurulumu yalnızca kullanıcının açık onayıyla gerçekleştirilir.
 
 ---
 
-## Features
+## Özellikler
 
-### Real-Time Hardware Monitoring
+### Gerçek Zamanlı Donanım İzleme
 
-- CPU utilization monitoring
-- RAM consumption tracking
-- CPU and GPU temperature readings
-- Temperature and usage history charts
-- Automatic updates approximately every three seconds
-- Running process information
-- Sensor availability and diagnostic reporting
+ThermalPilot, bilgisayarınızın temel performans verilerini tek bir arayüzde sunar.
 
-### Intelligent Sensor Selection
+- Anlık CPU kullanım oranı
+- RAM tüketimi
+- İşlemci sıcaklığı
+- Ekran kartı sıcaklığı
+- Donanım kullanım ve sıcaklık grafikleri
+- Yaklaşık üç saniyede bir yenilenen ölçümler
+- Çalışan işlemlerin görüntülenmesi
+- Sensör durumu ve tanılama raporları
 
-ThermalPilot prioritizes appropriate temperature sensors, including:
+### Akıllı Sensör Seçimi
+
+ThermalPilot, mevcut sensörler arasından uygun sıcaklık kaynaklarını öncelik sırasına göre değerlendirir.
+
+Desteklenen sensör türleri:
 
 - CPU Package
 - CPU Tdie
 - CPU Tctl
 - GPU Core
 
-Invalid, stale, empty, or zero-valued temperature readings are rejected rather than displayed as legitimate measurements.
+Geçersiz, eski, boş veya sıfır değerli ölçümler gerçek sıcaklık bilgisi olarak gösterilmez.
 
-Sensor availability depends on hardware and driver compatibility.
+Sensörlerin kullanılabilirliği bilgisayarın donanımına ve yüklü sürücülere bağlıdır.
 
-### Windows Performance Management
+### Windows Performans Yönetimi
 
-ThermalPilot provides three configurable performance profiles:
+Uygulama üç farklı performans profili sunar.
 
-- **Quiet / Cool:** Reduce CPU power limits and prioritize lower temperatures.
-- **Balanced:** Maintain a balance between performance and energy consumption.
-- **Performance:** Prioritize processing performance through supported Windows power settings.
+**Sessiz / Serin**
 
-All profiles support restoration of previous settings.
+CPU güç ayarlarını sınırlandırarak daha düşük sıcaklık ve enerji tüketimini hedefler.
 
-### Process Management
+**Dengeli**
 
-- Monitor running processes
-- View CPU and memory utilization
-- Reduce selected process priority
-- Restore previous priority settings
+Performans ve enerji tüketimi arasında dengeli bir kullanım sunmayı amaçlar.
 
-### Offline PE/COFF Inspection
+**Performans**
 
-ThermalPilot includes PE/COFF inspection functionality adapted from REA components.
+Desteklenen Windows güç ayarları üzerinden işlemci performansına öncelik verir.
 
-It allows supported executable file headers to be examined without executing the selected file.
+Tüm modlarda önceki ayarları geri yükleme desteği bulunur.
+
+### İşlem Yönetimi
+
+- Çalışan işlemleri görüntüleme
+- CPU ve bellek tüketimini inceleme
+- Seçilen işlemlerin önceliğini düşürme
+- Önceki işlem önceliğini geri yükleme
+
+### PE/COFF Dosya İncelemesi
+
+ThermalPilot, REA bileşenlerinden uyarlanan PE/COFF inceleme işlevlerini içerir.
+
+Desteklenen çalıştırılabilir dosyaların başlık bilgileri, dosya çalıştırılmadan analiz edilebilir.
 
 ---
 
-## Performance Modes
+## Performans Modları
 
-ThermalPilot applies temporary copies of the existing Windows power plan after user confirmation.
+ThermalPilot, kullanıcı onayından sonra mevcut Windows güç planının geçici bir kopyasını kullanarak performans ayarlarını uygular.
 
-| Mode | Maximum CPU State (AC / Battery) | Boost (AC / Battery) | EPP (AC / Battery) |
+| Mod | Maksimum CPU Durumu (Priz / Pil) | Boost (Priz / Pil) | EPP (Priz / Pil) |
 |---|---|---|---|
-| Quiet / Cool | 70% / 50% | Disabled / Disabled | 80 / 90 |
-| Balanced | 100% / 100% | Enabled / Enabled | 50 / 75 |
-| Performance | 100% / 100% | Aggressive Preference / Enabled | 0 / 25 |
+| Sessiz / Serin | %70 / %50 | Kapalı / Kapalı | 80 / 90 |
+| Dengeli | %100 / %100 | Açık / Açık | 50 / 75 |
+| Performans | %100 / %100 | Agresif tercih / Açık | 0 / 25 |
 
-The minimum CPU state is set to 5%.
+Minimum CPU durumu %5 olarak ayarlanır.
 
-**Important Notes:**
+### Önemli Bilgiler
 
-- These profiles do not guarantee higher FPS or fixed CPU frequencies.
-- Performance mode may increase temperatures, fan noise, and battery consumption.
-- Unsupported power settings are reported.
-- If required settings cannot be applied, the selected profile is not activated.
-- Fan curves, voltages, and BIOS settings are not modified.
+- Performans profilleri sabit işlemci frekansı veya FPS artışı garantisi vermez.
+- Performans modu sıcaklıkları, fan sesini ve pil tüketimini artırabilir.
+- Desteklenmeyen güç ayarları kullanıcıya bildirilir.
+- Zorunlu ayarlar uygulanamazsa seçilen mod etkinleştirilmez.
+- Fan eğrileri, voltaj değerleri ve BIOS ayarları değiştirilmez.
 
-The **Restore Previous Settings** feature restores the earlier Windows power plan.
+**Önceki Ayarları Geri Yükle** özelliği, daha önce kullanılan Windows güç planına dönülmesini sağlar.
 
-Automatic restoration on exit is enabled by default. If the user independently selects a different Windows power plan, that selection is preserved.
+Uygulama kapanırken otomatik geri yükleme varsayılan olarak aktiftir.
+
+Kullanıcı Windows üzerinden farklı bir güç planı seçmişse bu seçim korunur.
 
 ---
 
-## Build from Source
+## Kaynaktan Derleme
 
-ThermalPilot can be built using Windows PowerShell and the Windows .NET Framework C# compiler.
+ThermalPilot, Windows PowerShell ve Windows .NET Framework C# derleyicisi kullanılarak derlenebilir.
 
-The build process does not automatically download or install an SDK.
+Derleme sırasında otomatik SDK indirme veya kurulum işlemi gerçekleştirilmez.
 
-The required sensor archive is included at:
+Gerekli sensör arşivi şu konumda bulunur:
 
 `vendor/LibreHardwareMonitor.NET.10.zip`
 
-Its SHA-256 hash is checked before building.
+Derleme öncesinde arşivin SHA-256 bütünlük kontrolü yapılır.
 
-### Build Application
+### Uygulamayı Derleme
 
-Open PowerShell in the repository directory:
+Projenin ana klasöründe PowerShell açın:
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build.ps1
 ```
 
-### Run Regression Tests
+### Regresyon Testlerini Çalıştırma
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -Test
 ```
 
-Generated application:
+Oluşturulan uygulama:
 
 `dist/ThermalPilot.exe`
 
-Test results:
+Test sonuçları:
 
 `self-test-results.json`
 
-### Build Distribution Package
+### Windows Dağıtım Paketi Oluşturma
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\build.ps1 -Test -Package
 ```
 
-This command generates:
+Bu komut aşağıdaki dosyayı oluşturur:
 
 `ThermalPilot-1.3-Windows-x64.zip`
 
-The distribution package is also updated in the `downloads/` directory.
+Aynı zamanda dağıtım paketinin `downloads/` klasöründeki kopyasını günceller.
 
-An alternative `-SensorArchive` option supports a hash-verified official LibreHardwareMonitor 0.9.6 .NET Framework archive. This removes the .NET 10 helper requirement by running supported sensor processing in the main process.
+Alternatif `-SensorArchive` parametresiyle SHA-256 doğrulaması yapılan resmî LibreHardwareMonitor 0.9.6 .NET Framework arşivi kullanılabilir.
 
-This alternative has not been validated on real hardware.
+Bu alternatifte desteklenen sensör işlemleri ana uygulama sürecinde çalışır ve .NET 10 sensör yardımcısı gereksinimi ortadan kalkar.
+
+Ancak bu alternatif gerçek donanım üzerinde doğrulanmamıştır.
 
 ---
 
-## Testing & Verification
+## Test ve Doğrulama
 
-ThermalPilot includes regression tests for application functionality and system behavior.
+ThermalPilot; uygulama işlevlerini, sistem davranışını ve performans ayarlarını kontrol etmek için regresyon testleri içerir.
 
-### UI Smoke Test
+### Arayüz Kontrol Testi
 
 ```powershell
 Start-Process .\dist\ThermalPilot.exe -ArgumentList '--ui-smoke-test', ('"' + "$PWD\verification-1.3" + '"') -Wait -WindowStyle Hidden
 ```
 
-### Hardware Sensor Report
+### Donanım Sensör Raporu
 
 ```powershell
 Start-Process .\dist\ThermalPilot.exe -ArgumentList '--sensor-report', ('"' + "$PWD\sensor-results.json" + '"') -Wait -WindowStyle Hidden
 ```
 
-These commands may request administrator privileges through Windows UAC.
+Bu işlemler Windows UAC üzerinden yönetici izni isteyebilir.
 
-Regression tests do not modify the active Windows power plan. Process-priority testing operates on a dedicated child process.
+Regresyon testleri mevcut Windows güç planını değiştirmez.
 
-Sensor report exit codes:
+İşlem önceliği testleri, yalnızca test için oluşturulan alt süreç üzerinde gerçekleştirilir.
 
-- `0` — CPU and GPU sensor readings succeeded.
-- `2` — Partial hardware monitoring result.
+### Sensör Raporu Çıkış Kodları
 
-Successful regression testing does not guarantee functionality on every hardware configuration.
+- `0` — CPU ve GPU sıcaklık ölçümleri başarılı.
+- `2` — Donanım ölçümlerinde kısmi sonuç.
 
-See [Sensor Diagnostics](SENSOR-DIAGNOSIS.md) and [Power Mode Validation](POWER-MODE-VALIDATION.md) for additional information.
+Testlerin başarılı olması uygulamanın tüm donanımlarda sorunsuz çalışacağını garanti etmez.
+
+Ayrıntılı bilgiler:
+
+- [Sensör Tanılama](SENSOR-DIAGNOSIS.md)
+- [Güç Modu Doğrulaması](POWER-MODE-VALIDATION.md)
 
 ---
 
-## Local Data & Privacy
+## Yerel Veriler ve Gizlilik
 
-ThermalPilot is designed for local execution.
+ThermalPilot, temel işlevleri için internet bağlantısı veya bulut altyapısı gerektirmeyen yerel bir uygulama olarak tasarlanmıştır.
 
-Application records are stored under:
+Uygulama kayıtları şu dizinde saklanır:
 
 `%LOCALAPPDATA%\ThermalPilot`
 
-| File / Directory | Description |
+| Dosya / Klasör | Açıklama |
 |---|---|
-| `sensor-latest.json` | Latest sensor readings and diagnostics |
-| `sensor-events.jsonl` | Sensor provider events and status changes |
-| `sensors/` | Extracted sensor components |
-| `changes.json` | Reversible system modifications |
+| `sensor-latest.json` | Son sensör ölçümleri ve tanılama bilgileri |
+| `sensor-events.jsonl` | Sensör sağlayıcı olayları ve durum değişiklikleri |
+| `sensors/` | Çıkarılan sensör bileşenleri |
+| `changes.json` | Geri alınabilir sistem değişiklikleri |
 
-Sensor event logs rotate after approximately 1 MiB.
+Sensör olay kayıtları yaklaşık 1 MiB boyutuna ulaştığında döndürülür.
 
-The application does not require a cloud account, cloud database, or paid API subscription for its core functionality.
+Uygulamanın temel özellikleri için:
 
-Measurements and diagnostic reports remain stored locally.
+- Kullanıcı hesabı gerekmez.
+- Bulut veritabanı gerekmez.
+- Ücretli API aboneliği gerekmez.
+- Harici bir sunucu bağlantısı gerekmez.
 
-Intermediate build files, temporary reports, and test screenshots are excluded from Git tracking.
+Ölçümler ve tanılama raporları yerel olarak saklanır.
+
+Geçici derleme dosyaları, test ekran görüntüleri ve yerel raporlar Git takibine dahil edilmez.
 
 ---
 
-## Repository Structure
+## Proje Dosya Yapısı
 
 ```text
 ThermalPilot/
@@ -289,79 +326,87 @@ ThermalPilot/
 └── vendor/
 ```
 
-### Prepare GitHub Distribution
+### GitHub Yayın Paketi Hazırlama
 
 ```powershell
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\prepare-github.ps1
 ```
 
-This command prepares:
+Bu komut iki çıktı oluşturur:
 
 - `GITHUBA-YUKLE/`
 - `ThermalPilot-1.3-GitHub.zip`
 
-The publication package uses an explicit file list to exclude local reports, temporary outputs, and unnecessary development files.
+Yayın paketi, belirlenmiş dosya listesi kullanılarak hazırlanır.
 
-After application changes, rebuild the distribution before preparing a new GitHub package.
+Yerel raporlar, geçici dosyalar ve gereksiz geliştirme çıktıları pakete dahil edilmez.
 
----
-
-## Technical Documentation
-
-- [User Guide — Turkish](KULLANIM.txt)
-- [Sensor Architecture & Diagnostics](SENSOR-DIAGNOSIS.md)
-- [Power Mode Verification](POWER-MODE-VALIDATION.md)
-- [Sensor Dependencies & SHA-256 Information](vendor/README.md)
-- [Third-Party Notices](THIRD-PARTY-NOTICES.md)
+Uygulama kodları değiştirildikten sonra GitHub yayın paketinin yeniden hazırlanması önerilir.
 
 ---
 
-## Third-Party Licenses
+## Teknik Belgeler
 
-ThermalPilot uses or incorporates components distributed under their respective licenses:
+- [Kullanım Kılavuzu](KULLANIM.txt)
+- [Sensör Mimarisi ve Tanılama](SENSOR-DIAGNOSIS.md)
+- [Güç Modu Doğrulaması](POWER-MODE-VALIDATION.md)
+- [Sensör Bağımlılıkları ve SHA-256 Bilgileri](vendor/README.md)
+- [Üçüncü Taraf Yazılım Bildirimleri](THIRD-PARTY-NOTICES.md)
 
-| Component | License |
+---
+
+## Üçüncü Taraf Lisansları
+
+ThermalPilot, farklı açık kaynak bileşenleri kullanır veya bunlardan uyarlanan işlevler içerir.
+
+| Bileşen | Lisans |
 |---|---|
 | LibreHardwareMonitorLib | MPL-2.0 |
-| REA PE/COFF Components | MIT |
-| PawnIO Modules | See included license notices |
+| REA PE/COFF Bileşenleri | MIT |
+| PawnIO Modülleri | İlgili lisans bildirimleri |
 
-Relevant documentation:
+Lisans belgeleri:
 
-- [Third-Party Notices](THIRD-PARTY-NOTICES.md)
-- [LibreHardwareMonitor License](LIBREHARDWAREMONITOR-LICENSE.txt)
-- [PawnIO Module Notices](PAWNIO-MODULES-COPYING.txt)
-- [REA License](REA-LICENSE.txt)
+- [Üçüncü Taraf Bildirimleri](THIRD-PARTY-NOTICES.md)
+- [LibreHardwareMonitor Lisansı](LIBREHARDWAREMONITOR-LICENSE.txt)
+- [PawnIO Lisans Bildirimleri](PAWNIO-MODULES-COPYING.txt)
+- [REA Lisansı](REA-LICENSE.txt)
 
-These third-party licenses do not automatically establish licensing terms for ThermalPilot as a whole.
-
----
-
-## Development Approach
-
-ThermalPilot was developed using an AI-assisted engineering workflow, combining traditional Windows development with modern AI coding agents.
-
-The development process included:
-
-- Application architecture and feature implementation
-- Hardware monitoring integration
-- Sensor diagnostics and compatibility handling
-- Windows performance control
-- Automated verification and regression testing
-- REA-derived PE/COFF inspection functionality
-
-The goal is to explore practical applications of AI-assisted software engineering while building a useful Windows system utility.
+Bu lisanslar ThermalPilot projesinin tamamının otomatik olarak aynı lisanslarla dağıtıldığı anlamına gelmez.
 
 ---
 
-## Project Information
+## Geliştirme Yaklaşımı
 
-**Project:** ThermalPilot  
-**Version:** 1.3  
+ThermalPilot, geleneksel Windows yazılım geliştirme yöntemleri ile modern **yapay zekâ ajanlarının** birlikte kullanıldığı bir geliştirme süreciyle oluşturulmuştur.
+
+Geliştirme sürecinde:
+
+- Yapay zekâ destekli kod geliştirme
+- Uygulama mimarisinin oluşturulması
+- Donanım izleme bileşenlerinin entegrasyonu
+- Sensör tanılama ve uyumluluk yönetimi
+- Windows performans optimizasyonu
+- Otomatik test ve doğrulama süreçleri
+- REA tabanlı PE/COFF inceleme işlevleri
+
+üzerinde çalışılmıştır.
+
+Projenin amacı yalnızca bir sıcaklık izleme uygulaması geliştirmek değil, aynı zamanda **AI Agent'ların gerçek yazılım geliştirme süreçlerinde nasıl kullanılabileceğini** uygulamalı olarak deneyimlemektir.
+
+ThermalPilot, yapay zekâ destekli yazılım mühendisliği ile pratik sistem araçlarının geliştirilmesine yönelik bağımsız bir projedir.
+
+---
+
+## Proje Bilgileri
+
+**Proje Adı:** ThermalPilot  
+**Sürüm:** 1.3  
 **Platform:** Windows x64  
-**Technologies:** C#, WPF, PowerShell, .NET Framework  
-**Development:** AI-Assisted Software Engineering
+**Teknolojiler:** C#, WPF, PowerShell, .NET Framework  
+**Geliştirme Yaklaşımı:** AI-Assisted Software Engineering, REA  
+**Proje Türü:** Windows Donanım İzleme ve Performans Yönetimi
 
-ThermalPilot is an independently developed Windows utility.
+ThermalPilot bağımsız olarak geliştirilmiş bir Windows yardımcı uygulamasıdır.
 
-Hardware sensor compatibility and performance behavior vary depending on the device, operating system, and installed drivers.
+Donanım sensörlerinin kullanılabilirliği ve performans ayarlarının etkisi, bilgisayarın donanımına, işletim sistemine ve yüklü sürücülere göre değişebilir.
